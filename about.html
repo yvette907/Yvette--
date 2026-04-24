@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateTime()">
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="registration.html">Register</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<div class="container">
+    <h1><u>About Us</u></h1>
+    <p>This platform is designed to help job seekers apply for jobs online easily and quickly. Applying School is a platform designed to help students easily access information and apply to different schools. It aims to simplify the admission process by providing clear guidance on requirements, application steps, and available programs. The website is created to support students in making the right educational choices and to connect them with schools that match their interests and goals. Its mission is to make school applications easier, faster, and more accessible for everyone.</p>
+      <p class="fade-up delay">
+        Our goal is to build responsive and professional web applications using HTML, CSS and JavaScript. help for appying
+    </p>
+</div>
+
+<footer class="footer">
+    <p>Developed by Level 3 SOD Team</p>
+    <p id="time"></p>
+</footer>
+
+<script>
+function updateTime() {
+    let now = new Date();
+    document.getElementById("time").innerHTML =
+        now.toLocaleTimeString();
+}
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

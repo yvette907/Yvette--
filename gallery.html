@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateTime()">
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="registration.html">Register</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<div class="container gallery">
+    <h1>Gallery</h1>
+   <img src="2.jfif" alt="">
+   <img src="6.jfif"alt="ttt">
+   <img src="5.jfif"alt="ttt">
+   <img src="4.jfif"alt="hhhh">
+
+</div>
+<footer class="footer">
+    <p>Developed by Level 3 SOD Team</p>
+    <p id="time"></p>
+</footer>
+
+<script>
+function updateTime() {
+    let now = new Date();
+    document.getElementById("time").innerHTML =
+        now.toLocaleTimeString();
+}
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
