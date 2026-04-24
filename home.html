@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-< html>
+<html>
 <head>
-    <title>Applying Job - Home</title>
+    <title>Yvette Fashion</title>
     <link rel="stylesheet" href="style.css">
 </head>
-  <body class="home">onload="updateTime()" 
-<nav>
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="registration.html">Register</a>
-    <a href="login.html">Login</a>
+<body class="home">
+    <nav>
+    <div class="logo">
+        <img src="10.png" alt="Yvette Fashion Logo">
+        <h2>Yvette Fashion</h2>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="registration.html">Register
+        <a href="login.html">login</a>
+            
+        </a>
+    </div>
 </nav>
-<div class="container">
-    <h1>Welcome to Applying Job Website</h1>
-    <p>This website helps people apply for jobs easily.</p>
-    <a href=""class="hero-btn">visit us to know more</a><br><br><br>
-    <div class="icon">
-        <div class="icon">
- <h2 class="logon">PRaRoZ</h2>
-<footer class="footer">
-    <p>Developed by Level 3 SOD Team</p>
-    <p id="time"></p>
+
+<div class="content">
+    <h1>Welcome to Yvette Fashion and Design</h1>
+    <p>Style Meets Elegance</p>
+</div>
+
+<footer>
+    <p>Developed by L3 SOD | <span id="time"></span></p>
 </footer>
 
 <script>
 function updateTime() {
-    let now = new Date();
-    document.getElementById("time").innerHTML =
-        now.toLocaleTimeString();
+    document.getElementById("time").innerHTML = new Date().toLocaleTimeString();
 }
 setInterval(updateTime, 1000);
-updateTime();
 </script>
 
-<script src="script.js"></script>
 </body>
 </html>
