@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - Yvette Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery">
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="registration.html">Register
+    <a href="login.html" >login</a>   
+    </a>
+</nav>
+
+<h1 style="text-align:center;">Our Designs</h1>
+
+<div class="gallery-container">
+    <img src="1.jpg" alt="uuuu">
+    <img src="2.jpg" alt="ttt">
+    <img src="3.jpg" alt="yy"
+    <img src="7.jpg" alt="rrr">
+    <img src="9.jpg" alt="yyyy">
+    <img src="5.jpg" alt="ttt">
+</div>
+
+<footer>
+    <p>Developed by L3 SOD</p>
+    <p>&copy; 2026 All Rights Reserved</p>
+    <p id="time"></p>
+</footer>
+
+<script>
+function updateTime() {
+    var now = new Date();
+    document.getElementById("time").innerHTML = now.toLocaleString();
+}
+setInterval(updateTime, 1000);
+</script>
+
+</body>
+</html>

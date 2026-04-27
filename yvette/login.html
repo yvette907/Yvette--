@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Yvette Fashion and Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">
+        <h2>Yvette Fashion</h2>
+    </div>
+
+    <div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="registration.html">Register</a>
+        <a href="login.html">Login</a>
+    </div>
+</nav>
+
+<!-- Login Form -->
+<div class="form-box">
+    <h1>Login</h1>
+    <p class="tagline">Welcome back to Yvette Fashion</p>
+
+    <form onsubmit="return loginUser()">
+        <input type="email" id="email" placeholder="Enter Email" required><br>
+        <input type="password" id="password" placeholder="Enter Password" required><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© Yvette Fashion and Design | Developed by L3 SOD</p>
+</footer>
+<script>
+function loginUser() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(email === "yvette@gmail.com" && password === "1234") {
+        document.getElementById("message").innerHTML = "Login successful!";
+    } else {
+        document.getElementById("message").innerHTML = "Incorrect email or password!";
+    }
+
+    return false;
+}
+</script>
+
+</body>
+</html>
